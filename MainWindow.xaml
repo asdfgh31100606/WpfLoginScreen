@@ -1,0 +1,29 @@
+﻿<Window x:Class="WpfLoginScreen.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfLoginScreen"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="781" Width="1330" FontSize="24">
+    <Grid Background="#FF4AE2D4">
+        <Label Content="Member System Management" Height="72" RenderTransformOrigin="0.439,1.94" Margin="388,10,388,684" FontSize="36"/>
+        <Label Content="Name" Height="70" Width="147" RenderTransformOrigin="1.375,2.342" Margin="167,143,1016,553" FontSize="36"/>
+        <Label Content="Age" Height="70" Width="147" RenderTransformOrigin="1.375,2.342" Margin="167,218,1016,478" FontSize="36"/>
+        <Label Content="Sex" Height="70" Width="147" RenderTransformOrigin="1.375,2.342" Margin="167,299,1016,397" FontSize="36"/>
+        <Label Content="City" Height="70" Width="147" RenderTransformOrigin="1.375,2.342" Margin="167,374,1016,322" FontSize="36"/>
+        <Label Content="ID" Height="70" Width="147" RenderTransformOrigin="1.375,2.342" Margin="470,493,713,203" FontSize="36"/>
+
+        <TextBox x:Name="Name_txt" HorizontalAlignment="Left" Height="50" Margin="319,143,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="225"/>
+        <TextBox x:Name="Age_txt" HorizontalAlignment="Left" Height="50" Margin="319,218,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="225"/>
+        <TextBox x:Name="Sex_txt" HorizontalAlignment="Left" Height="50" Margin="319,304,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="225"/>
+        <TextBox x:Name="City_txt" HorizontalAlignment="Left" Height="50" Margin="319,378,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="225" RenderTransformOrigin="0.482,-0.307"/>
+        <TextBox x:Name="ID_txt" HorizontalAlignment="Left" Height="50" Margin="573,493,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="263"/>
+        <Button x:Name="Insert_btn" Content="InsertData" HorizontalAlignment="Left" Height="106" Margin="124,578,0,0" VerticalAlignment="Top" Width="243" Click="Insert_btn_Click" Background="#FFC73C3C" Foreground="white"/>
+        <Button x:Name="Update_btn" Content="UpdateData" HorizontalAlignment="Left" Height="106" Margin="422,578,0,0" VerticalAlignment="Top" Width="243" Click="Update_btn_Click" Background="#FFD32B2B" Foreground="white"/>
+        <Button x:Name="Delete_btn" Content="DeleteData" HorizontalAlignment="Left" Height="106" Margin="715,578,0,0" VerticalAlignment="Top" Width="243" Click="Delete_btn_Click" Background="#FFD73737" Foreground="white"/>
+        <Button x:Name="Clear_btn" Content="ClearData" HorizontalAlignment="Left" Height="106" Margin="1015,578,0,0" VerticalAlignment="Top" Width="243" Click="Clear_btn_Click" Background="#FFD43A3A" Foreground="white"/>
+        <DataGrid x:Name="DataGrid" HorizontalAlignment="Left" Height="330" Margin="718,123,0,0" VerticalAlignment="Top" Width="543"/>
+
+    </Grid>
+</Window>
